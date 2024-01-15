@@ -1,12 +1,13 @@
 package com.desFS.services;
 
 import com.desFS.util.APIBaseTest;
-import static org.junit.Assert.assertEquals;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 import javax.ws.rs.core.Response;
+
+import static org.junit.Assert.assertEquals;
 
 @FixMethodOrder(MethodSorters.JVM)
 public class ApiTest extends APIBaseTest {

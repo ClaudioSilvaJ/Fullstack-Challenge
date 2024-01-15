@@ -7,8 +7,7 @@ import org.example.configs.CorsFilter;
 import org.glassfish.jersey.servlet.ServletContainer;
 import org.mongodb.morphia.Datastore;
 public class APIServer {
-    static Integer mongoDBPort = 27017;
-    protected static Datastore datastore = new MorphiaConfig("FSCDatabase", mongoDBPort).getDatastore();
+    protected static Datastore datastore = new MorphiaConfig("FSCDatabase").getDatastore();
 
     public static void main(String[] args) throws Exception {
         Server server = new Server(8231);
