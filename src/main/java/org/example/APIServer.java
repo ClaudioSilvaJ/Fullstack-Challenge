@@ -11,6 +11,8 @@ public class APIServer {
 
     public static void main(String[] args) throws Exception {
         Server server = new Server(8231);
+        RunBackFrontScript.executeMongodCommand(27017);
+        RunBackFrontScript.executeStartFrontCommand();
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
         server.setHandler(context);

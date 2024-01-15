@@ -1,12 +1,12 @@
 package com.desFS;
 
-import com.desFS.services.ApiTest;
+import com.desFS.services.MainServicesTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        ApiTest.class,
+        MainServicesTest.class,
 })
 public class FullMainTests {
 }
