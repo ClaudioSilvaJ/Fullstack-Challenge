@@ -12,7 +12,7 @@ const Header = () => {
     }
 
     axios.post('http://localhost:8231/api/register', send)
-      .then(response => {
+      .then(() => {
         alert("Enviado com sucesso");
         setTimeout(() => {
           window.location.reload();
